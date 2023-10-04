@@ -13,8 +13,7 @@
                    HeightRequest="200"
                    HorizontalOptions="Center" />
 
-            <Border StrokeShape="RoundRectangle 9"
-                    Padding="16"
+            <Border Padding="16"
                     Background="White">
                 <VerticalStackLayout>
                     <Label Text="This page breaks the Xaml Live Preview inspection"
@@ -22,7 +21,12 @@
                            FontSize="32"
                            HorizontalOptions="Center" />
 
-                    <Label Text="The RoundRectangle triggers an issue - see the Xamarin Hot Reload output pane in VS"
+                    <Label Text="The Border triggers an issue - see the Xamarin Hot Reload output pane in VS"
+                           SemanticProperties.HeadingLevel="Level2"
+                           FontSize="18"
+                           HorizontalOptions="Center" />
+
+                    <Label Text="Click the Border in the Live Visual Tree to see the error message"
                            SemanticProperties.HeadingLevel="Level2"
                            FontSize="18"
                            HorizontalOptions="Center" />
